@@ -1,0 +1,2 @@
+To insert 2 modules with different names, but having same functionality
+Conflicting Export symbols have been defined differently using "EXTRACFLAGS:=-DMACRO"
