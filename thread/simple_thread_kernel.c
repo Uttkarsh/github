@@ -32,7 +32,8 @@ int thread_init (void) {
 	printk(KERN_INFO "in init");
 	printk(use_macro_as_string(JUST_MACRO));
 	printk("\nThis is name of thread - %s:%d: %s: %d", our_thread, 1, use_macro_as_string(MACRO), 99);
-	thread = kthread_create(thread_fn, NULL,"%s:%d: %s: %d", our_thread, 1, use_macro_as_string(MACRO), 99);
+	thread = kthread_create(thread_fn, NULL,"%s:%d: %s: %d", our_thread, 1,
+							se_macro_as_string(MACRO), 99);
 	if((thread))
 	{
 		printk(KERN_INFO "in if");
