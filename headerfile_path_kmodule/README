@@ -1,0 +1,2 @@
+For specifying header file path, 
+EXTRA_CLAGS is assigned with the -I option
